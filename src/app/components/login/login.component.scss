@@ -1,0 +1,16 @@
+input{
+    border: 0;
+    background-color: var(--color-bg-dark);
+    border-bottom: 1px solid black;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+button{
+    border: none;
+    background-color: aqua;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
