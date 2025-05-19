@@ -1,14 +1,14 @@
 const admin = require('firebase-admin')
 require('dotenv').config()
 
-const serviceAccount = JSON.parse(process.env.FIREBASE_CREDENTIALS);
+const serviceAccount = process.env.FIREBASE_CREDENTIALS
 
-// ⚠️ Reemplazar los caracteres \\n por saltos de línea reales
-serviceAccount.private_key = serviceAccount.private_key.replace(/\\n/g, '\n');
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: admin.credential.cert(require('../../key-firebase.json')),
 });
+
+console.log('[Firebase] Cliente inicializado con:', serviceAccount);
 
 const db = admin.firestore();
 module.exports = db;

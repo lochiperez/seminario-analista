@@ -7,6 +7,7 @@ const getRepairs = async (req, res) => {
     const trabajos = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     res.json(trabajos);
   } catch (error) {
+    console.log('Error: ',error)
     res.status(500).json({ error: 'Error al obtener reparaciones' });
   }
 };
