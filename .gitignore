@@ -53,3 +53,4 @@ Frontend/node_modules
 Frontend/.angular
 Frontend/.vscode
 Backend/key-firebase.json
+**/node_modules
