@@ -1,0 +1,14 @@
+<div class="height-100vh width-100vw bg-black flex flex-center">
+    <div class="bg-dark height-80% flex radius-lg">
+      <form [formGroup]="loginForm" class="height-100% flex flex-column padding-xxl gap-md flex-center">
+        <h3>Login</h3>
+        <input formControlName="user" type="text" placeholder="Usuario" />
+        <input formControlName="password" type="password" placeholder="Contraseña" />
+        <button (click)="login({user:'lochiperez', password:'Lochi123'})">Login</button>
+        <button (click)="repairs()">Reparaciones</button>
+        <button (click)="solutions()">Soluciones</button>
+      </form>
+      <img class="" src="assets/img/reparacionCelular.jpg" alt="" />
+    </div>
+  </div>
+  
