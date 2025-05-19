@@ -47,8 +47,9 @@ Thumbs.db
 *-debug.log
 .runtimeconfig.json
 /Backend/.env
-/Backend/node_modules
-/Frontend/node_modules
-/Frontend/.angular
-/Frontend/.vscode
-/Backend/key-firebase.json
+*node_modules*
+Backend/node_modules
+Frontend/node_modules
+Frontend/.angular
+Frontend/.vscode
+Backend/key-firebase.json
